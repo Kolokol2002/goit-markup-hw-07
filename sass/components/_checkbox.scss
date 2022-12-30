@@ -1,14 +1,12 @@
 .checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     margin-bottom: 30px;
     
     &__box {
         position: relative;
-        margin: 0 7px 0 0;
-        padding: 0;
+        margin-right: 7px;
         height: 15px;
+        cursor: pointer;
     }
     
     &__input {
@@ -25,11 +23,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(-50% -50%);
         border-radius: 1px;
         fill: transparent;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill $transition-ms $transition-cubic,
+            background-color $transition-ms $transition-cubic;
 
         .checkbox__input:checked + & {
             fill: $color-icon-reverse;

@@ -11,9 +11,7 @@
     }
     
     &__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-center;
         height: 120px;
         width: 100%;
         background-color: #F5F4FA;

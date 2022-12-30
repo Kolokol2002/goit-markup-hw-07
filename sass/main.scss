@@ -1,6 +1,7 @@
 // Utils
 @import './utils/variables';
 @import './utils/hidden';
+@import './utils/placeholders';
 
 // Base
 @import './base/base';
@@ -9,6 +10,7 @@
 // Components
 @import './components/buttons';
 @import './components/address';
+@import './components/cards';
 @import './components/logo';
 @import './components/backdrop';
 @import './components/modal';
@@ -23,5 +25,6 @@
 @import './layout/doing-section';
 @import './layout/command-section';
 @import './layout/clients-section';
+@import './layout/portfolio-section';
 @import './layout/footer';
 
