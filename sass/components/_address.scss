@@ -3,14 +3,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-}
 
-.address__link {
-    color: $color-text-secondary;
-    cursor: pointer;
-    font-style: normal;
-}
-
-.address__icon {
-    margin-right: 10px;
+    &__link {
+        color: $color-text-secondary;
+        cursor: pointer;
+        font-style: normal;
+    }
+    
+    &__icon {
+        margin-right: 10px;
+    }
 }
